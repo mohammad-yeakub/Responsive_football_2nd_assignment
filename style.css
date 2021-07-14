@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* --------------Header Are----------*/
+
+header{
+    width: 100%;
+    /* height: 677px; */
+    background: #2D25A0;
+}
+            /* ______________ Nav Section_____________ */
+    .bars{
+            display: none;
+            color: white;
+            width: 32px;
+            height: 32px;
+            }
+    .navbar{
+        padding: 42px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }        
+
+    .nav-links{
+        
+    }
+    .nav-links a {
+        padding-right: 36px ;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }    
+
+    .navbar .fas{
+        padding-left: 0px;
+        padding-right: 12px;
+    }
+            /* ______________ Top Banner Section_____________ */
+
+    .banner{
+        margin-top: 77px;
+        display: flex;
+        align-items: center;
+    }
+    .banner-tittle .button{
+       
+        margin-left: 140px;
+    }
+    .banner-tittle h1 {
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 64px;
+        margin-bottom: 27px;
+        margin-left: 150px;
+        
+    }
+            
+   
+    .banner-pic img{
+        width: 556px;
+        height: 440px;
+    }
+/* ---------------Players Grid------------- */
+
+.container{
+
+    width: 1050px;
+    margin: 0 auto;
+}
+.players{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px ;
+    grid-row-gap: 27px ;
+}
+.thumbnails img{
+    width: 300px;
+    height: 256px;
+}
+
+.player{
+    padding: 15px;
+    background: #FFFFFF;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.players-name{
+    margin-top: 16px;
+    font-weight: 700;
+    color: #18191F;
+    font-size: 28px;
+}
+
+.info-texts{
+    margin-top: 10px;
+    font-weight: 400
+    font-size: 16px;
+    color: #6C6C6C ;
+}
+
+
+
+/* ------------------- Highlight Grid------------- */
+.highlight{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.img-div img{
+    width: 567px;
+    height: 427px;
+}
+
+.half-div{
+    width: 50%;
+
+}
+
+.texts-div h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+.texts-div p {
+    color: #6c6c6c;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.button {
+   width: 140px;
+    background: #E02C6D;
+    color: whitesmoke;
+  
+    padding: 12px;
+    height: 44px;
+}
+.button a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16;
+    font-weight: 500;
+}
+.fas{
+    margin-left: 12px;
+}
+
+/* ---------------- Footer Area----------------- */
+
+footer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo img{
+    
+    width: 484px;
+    height: 110px;
+}
+ .icons{
+    margin: 20px 0;
+}
+footer .fas,.fab {
+    color: #969BAB;
+    padding: 14px;
+    width: 32px;
+    height: 32px;
+}
+footer p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+
+/* ---------------Media Queries---------------*/
+
+
+/* -----------Mobile---------- */
+
+@media  (max-width:488px) {
+  
+    .bars{
+        display: block;
+        
+    }
+    .nav-links{
+        display: none;
+    }
+    .container{
+      width: 100%;
+  }
+
+  .banner{
+    width: 100%;
+     flex-direction: column;
+  }
+  .banner-pic img{
+    width: 329px;
+    height: 259px;
+}
+.banner-tittle h1 {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 27px;
+    margin-left: 0px;
+    
+}
+.banner-tittle .button{
+       
+    margin-left: 14px;
+}
+  .highlight{
+ width: 100%;
+ flex-direction: column;
+  }
+  .half-div{
+      padding: 14px;
+  }
+  .img-div img{
+      margin-top: 27px;
+    width: 328px;
+    height: 248px;
+}
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+     .logo img {
+         width: 271px;
+         height: 63px;
+     }
+    footer img{
+        width: 271px;
+        height: 63px;
+    }
+    footer { 
+        margin: 20px auto;
+        width: 280px;
+        height: 175px;
+      
+    }
+}
